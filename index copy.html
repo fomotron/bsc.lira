@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>里拉斜塔 | LIRA</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.png" />
+    <link href="fonts/sfuidisplay.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="css/plugins.min.css" />
+    <link rel="stylesheet" href="css/app.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+</head>
+
+<body class="theme-roman" data-spy="scroll" data-target="#navbar-nav" data-animation="false" data-appearance="purple">
+
+
+    <!--loading-->
+    <div class="mask bg_4" id="loading" style="display:none;">
+        <div class="loading">
+            <div class="loading_bar"></div>
+        </div>
+    </div>
+    <div class="preloader">
+        <div class="wrapper">
+            <div class="blobs">
+                <div class="blob-center"></div>
+                <div class="blob"></div>
+                <div class="blob"></div>
+                <div class="blob"></div>
+                <div class="blob"></div>
+                <div class="blob"></div>
+                <div class="blob"></div>
+            </div>
+            <div>
+                <div class="loader-canvas canvas-left"></div>
+                <div class="loader-canvas canvas-right"></div>
+            </div>
+        </div>
+    </div>
+    <main class="main">
+        <header class="navbar navbar-sticky sticky-bg-color--darkblue navbar-expand-lg navbar-dark">
+            <div class="container-fluid position-relative">
+                <a class="navbar-brand" href="index.html">
+                    <img class="navbar-brand__regular" src="img/brand-logo-white.png" alt="brand-logo">
+                    <img class="navbar-brand__sticky" src="img/brand-logo-white.png" alt="sticky brand-logo">
+                </a>
+                <button class="navbar-toggler d-lg-none" type="button" data-toggle="navbarToggler" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+                <div class="navbar-inner ml-lg-auto">
+                    <button class="navbar-toggler d-lg-none" type="button" data-toggle="navbarToggler" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+                    <nav>
+                        <ul class="navbar-nav" id="navbar-nav">
+                            <li class="nav-item"> <a class="nav-link" href="#about">规则</a> </li>
+                            <li class="nav-item"> <a class="nav-link" href="#token-sale-details">LIRA币</a> </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="d-flex flex-column flex-sm-row align-items-center d-sm-inline-block ml-lg-1 ml-xl-2 mr-4 mr-sm-4 m-lg-0 header_right">
+                    <!--<a href="#" class="btn btn-size--md btn-border btn-border--width--2 btn-border--color--primary color--white rounded--full btn-hover--3d btn-hover--splash d-none d-sm-inline-block"> <span class="btn__text d-flex align-items-center">Join our Telegram </span> </a>
+                    <a href="#" class="btn btn-size--md btn-bg--primary rounded--full btn-hover--3d btn-hover--splash"> <span class="btn__text d-flex align-items-center"> <i class="icon icon-a-add color--white pr-1 h6-font font-w--700"></i> Sign up </span> </a>-->
+
+                    <p>loading</p>
+                    <strong class="text-color--200">loading</strong>
+                </div>
+            </div>
+        </header>
+        <section class="hero hero--v6 hero--full section--darkblue bg-gradient--darkblue--1 d-flex align-items-center hidden">
+            <div class="background-holder background--bottom z-index1">
+                <img src="img/layout/map-1.png" alt="image" class="background-image-holder" />
+            </div>
+            <div class="svg-shape svg-shape-wave d-none d-lg-block">
+                <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1920 620">
+                    <defs>
+                        <lineargradient id="wave-1-a" x1="91.821%" x2="8.258%" y1="-3.695%" y2="81.178%">
+                            <stop offset="0%" stop-color="#2A36AC" />
+                            <stop offset="100%" stop-color="#171883" />
+                        </lineargradient>
+                        <lineargradient id="wave-1-b" x1="90.535%" x2="10.832%" y1="4.232%" y2="85.759%">
+                            <stop offset="0%" stop-color="#7679EC" stop-opacity="0" />
+                            <stop offset="100%" stop-color="#5659E1" />
+                        </lineargradient>
+                    </defs>
+                    <path class="svg-line" fill="url(#wave-1-a)" fill-rule="evenodd" stroke="url(#wave-1-b)"
+                        stroke-width="6"
+                        d="M-22.367223,829.365369 C47.8180949,725.233038 134.111268,731.437531 234.193598,847.152817 C273.353512,891.087195 307.028199,910.593177 338.265123,909.853439 C365.092805,909.218118 390.288083,894.182042 420.454093,863.630787 C429.588386,854.379841 438.997249,843.964548 451.335914,829.645952 C453.858532,826.718541 476.633091,799.992904 483.603802,791.987122 C504.948033,767.473516 522.234002,749.459356 540.435668,733.563857 C562.788651,714.043017 585.163058,699.16629 608.833467,688.824275 C664.49258,664.505837 726.433205,665.853427 799.302255,697.505792 C874.685922,730.250439 930.021659,735.252444 973.79212,717.251707 C992.450868,709.578239 1009.12469,697.759955 1025.59014,681.307946 C1038.52265,668.385995 1049.41242,655.028513 1067.90797,630.411498 C1069.06331,628.873768 1074.30586,621.882493 1075.73545,619.980561 C1094.31817,595.258063 1105.7581,581.219491 1119.4406,567.377636 C1137.08772,549.52499 1155.23692,536.056623 1175.64738,526.508862 C1223.79391,503.986512 1284.04516,503.894195 1364.18517,530.10651 C1441.86592,555.514446 1503.30729,554.203957 1555.08071,530.306348 C1577.09537,520.14481 1597.32891,505.962764 1617.26372,487.437577 C1633.34022,472.497869 1648.09715,456.026992 1667.76056,431.934359 C1670.72185,428.306027 1689.78833,404.658967 1695.30396,397.965487 C1712.53689,377.052492 1725.79585,362.613652 1739.58866,350.465124 C1756.33384,335.716199 1772.9761,325.393365 1790.81046,319.319361 C1831.54878,305.444757 1878.51106,314.004559 1937.4923,348.861006 C2123.16473,458.588806 2144.25888,666.20199 2001.45303,970.525832 L2000.65244,972.231901 L-125.452084,994.056123 L-22.422471,829.450405 L-22.367223,829.365369 Z"
+                        transform="translate(0 -310)" />
+                </svg>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-10 col-lg-8 col-xl-7 mx-auto mx-lg-0 mb-3 mt-4 mt-lg-0 text-center text-lg-left z-index2">
+                        <div class="hero-content">
+                            <h1 class="hero__title font-w--600 mb-2 mb-lg-3">里拉斜塔 </h1>
+                            <h5 class="hero__title font-w--300 mb-2 mb-lg-3">依托于<a href="https://tron.network/" target="_blank">Tron(波场)</a> </h5>
+                            <p class="hero__description text-color--200 font-size--20 opacity--80 mb-3 mb-lg-5 mb-md-6 text-left" style="color: #fff;">
+                                <p class="text-left font-size--22" style="color: #ffff00;font-weight: bolder;">手机请使用钱包DAPP浏览器 </p>
+                                <p class="text-left font-size--22" style="color: #ffff00;font-weight: bolder;">电脑请安装浏览器钱包插件</p>
+                                <p class="text-left font-size--18" style="color: #ffff00;font-weight: bolder;">支持钱包:<a style="color: #fff;font-weight: bolder;text-decoration: underline;" href="https://www.tronlink.org/" target="_blank">波宝钱包</a>
+                                    <a style="color: #fff;font-weight: bolder;text-decoration: underline;" href="https://mathwallet.org/zh-cn/" target="_blank">麦子钱包</a>
+                                    <a style="color: #fff;font-weight: bolder;text-decoration: underline;" href="https://www.tokenpocket.pro/" target="_blank">TokenPocket</a>
+                                </p>
+
+
+                                <p class="text-left" style="color:#fff">1、合约部署到公链，人人可查看源码，人人可参与，免注册，无服务器，无操盘手，无后台 </p>
+                                <p class="text-left" style="color:#fff">2、30%大奖奖池给最后一位参与者 </p>
+                                <p class="text-left" style="color:#fff">3、推荐奖励和静态分红立刻发放到参与者钱包账户 </p>
+                                <p class="text-left" style="color:#fff">4、静态分红最高3倍，推荐奖励无封顶 </p>
+                                <p class="text-left" style="color:#fff">5、可以复投 </p>
+                                <p class="text-left" style="color:#fff">6、每次有新的参与者，开奖倒计时重置24小时 </p>
+                                <p class="text-left" style="color:#fff">7、倒计时完成立即发放大奖到获奖者钱包，合约自动执行 </p>
+                                <p class="text-left" style="color:#fff">8、参与者立刻空投100万里拉币LIRA </p><br/>
+                                <span style="color: #ffff00;font-weight: bolder; " class="font-size--22">官方群Telegram:
+                                <a href="https://t.me/MoreTrxGame" target="_blank" 
+                                    style="color: #ffff00;font-weight: bolder; text-decoration: underline;">https://t.me/MoreTrxGame</a></span><br/><br/><br/>
+                            </p>
+                            <div class="button-group d-flex flex-row flex-sm-row align-items-center d-sm-inline-block">
+                                <a href="#" class="btn buy_now btn-bg--primary rounded--full btn-hover--3d btn-hover--splash">
+                                    <span class="btn__text">立即获取大奖</span> </a>
+                                <a href="#" target="_blank" class="btn view_contract btn-bg--darkblue rounded--full btn-hover--3d btn-hover--splash btn-size--sm">
+                                    <span class="btn__text">查看合约</span> </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-5 col-lg-7 position-relative pos-abs-xl-bottom-right z-index1 col-12 pb-md-5 pr-3 text-left">
+                        <div class="ico-progress ico-progress--v1">
+                            <div class="text-center text-lg-left">
+                                <span class="font-size--20 color--white mb-1">奖池倒计时:</span>
+                                <ul class="countdown d-flex mb-4 justify-content-center justify-content-lg-start text-left" id="date" data-date="1622016350000">
+                                    <!--<li class="d-flex flex-column mr-2 mr-sm-3"> <span class="countdown__count h2-font font-w--500 mb-1" id="days"></span> <span class="color--primary font-w--500 opacity--60">Days</span> </li>-->
+                                    <li class="d-flex flex-column mr-2 mr-sm-3"> <span class="countdown__count h2-font font-w--500 mb-1" id="hours"></span> <span class="color--primary font-w--500 opacity--60">Hours</span> </li>
+                                    <li class="d-flex flex-column mr-2 mr-sm-3"> <span class="countdown__count h2-font font-w--500 mb-1" id="minutes"></span> <span class="color--primary font-w--500 opacity--60">Minutes</span> </li>
+                                    <li class="d-flex flex-column"> <span class="countdown__count h2-font font-w--500 mb-1" id="seconds"></span> <span class="color--primary font-w--500 opacity--60">Seconds</span> </li>
+                                </ul>
+                            </div>
+                            <div class="ico-progress-bar rounded--full d-flex align-items-center mb-2">
+                                <div class="ico-progress-bar__inner rounded--full bg-color--primary jsElement" id="date_progress" data-progress-horizon="50.22"></div>
+                            </div>
+
+                            <div class="d-flex justify-content-between">
+                                <div class="ico-progress__text">
+                                    <span class="body-font text-color--200  font-w--500">奖池金额</span>
+                                    <p class=" h6-font font-w--200 text-color--200" style="color: rgb(238, 255, 0);font-weight: bolder;"><span id="prize_value"></span> TRX
+                                    </p>
+                                </div>
+                                <div class="ico-progress__text text-right">
+                                    <span class="body-font text-color--200  font-w--500">购买人次</span>
+                                    <p class=" h6-font font-w--200 text-color--200"><span id="join_member"></span></p>
+                                </div>
+
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <div class="ico-progress__text">
+                                    <span class="body-font text-color--200  font-w--500">累计分红</span>
+                                    <p class="h6-font font-w--200 text-color--200"><span id="total_bonus"></span> TRX
+                                    </p>
+                                </div>
+                                <div class="ico-progress__text text-right">
+                                    <span class="body-font text-color--200  font-w--500">价格</span>
+                                    <p class="h6-font font-w--200 text-color--200"><span class="info_price" style="color: rgb(238, 255, 0);font-weight: bolder;"></span> TRX</p>
+                                </div>
+
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <div class="ico-progress__text">
+                                    <span class="body-font text-color--200 font-w--500">最后参与用户</span>
+                                    <p class="h6-font font-w--200 text-color--200"><span id="last_user"></span></p>
+                                </div>
+                                <div class="ico-progress__text text-right">
+                                    <span class="body-font text-color--200  font-w--500">最后购买时间</span>
+                                    <p class="h6-font font-w--200 text-color--200"><span id="last_time"></span></p>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between text-break" id="recommond_link" style="display:none !important;">
+                                <div class="ico-progress__text">
+                                    <span class="body-font text-color--200 font-w--200" style="color: #ffff00;font-weight: bolder;">推广地址</span>
+                                    <h6 class="text-color--200">
+                                        <a href="#" class="body-font font-w--200 text-color--200 a_link" target="_blank" style="color: #ffff00;font-weight: bolder;"></a>
+                                        <button class="btn btn-bg--primary rounded--full btn-size--sm mr-1 btn-hover--3d" id="btn_copy"><span class="btn__text">复制</span></button>
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--<div class="col-12 col-md-1 pos-abs-md-vertical-center pos-right text-center  mr-md-3 mr-xl-2 z-index1">
+                        <ul class="icon-group icon-group--vertical rounded--full justify-content-center mb-3 mb-md-10">
+                            <li><a href="#" class="color--primary"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#" class="color--primary"><i class="fab fa-telegram-plane"></i></a></li>
+                            <li><a href="#" class="color--primary"><i class="fab fa-linkedin-in"></i></a></li>
+                            <li><a href="#" class="color--primary"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#" class="color--primary"><i class="fab fa-medium-m"></i></a></li>
+                            <li><a href="#" class="color--primary"><i class="fab fa-bitcoin"></i></a></li>
+                            <li><a href="#" class="color--primary"><i class="fab fa-youtube"></i></a></li>
+                        </ul>
+
+                    </div>-->
+                </div>
+            </div>
+        </section>
+        <!--我的信息-->
+
+        <section class="space token-sale-details token-sale-details--v1 section--darkblue bg-gradient--darkblue--3" id="my_report">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-sm-10 col-md-8 mx-auto">
+                        <div class="text-center mb-5 mb-lg-7 reveal">
+                            <h2 class="h3-font font-w--600 mb-2">我的收益</h2>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row align-items-end">
+                    <div class="col-12 col-lg-6 col-xl-7 mx-auto mx-md-0 remove-space--bottom">
+
+                        <div class="d-flex flex-row mb-2 reveal">
+                            <div class="card bg-color--blue-opacity--15 border--none p-2 p-md-4 mr-2 w-100">
+                                <span class="body-font font-w--600 mb-1">持有份额</span>
+                                <span class="color--primary h4-font font-w--700"><span
+                                        id="user_have_count"></span></span>
+                            </div>
+                            <div class="card bg-color--blue-opacity--15 border--none p-2 p-md-4 w-100">
+                                <span class="body-font font-w--600 mb-1">投入金额</span>
+                                <span class="color--primary h4-font font-w--700"><span id="user_income_value"></span> TRX
+                                </span>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-row mb-2 reveal">
+                            <div class="card bg-color--blue-opacity--15 border--none p-2 p-md-4 mr-2 w-100">
+                                <span class="body-font font-w--600 mb-1">分红收益</span>
+                                <span class="color--primary h4-font font-w--700"><span
+                                        id="user_investment_value"></span> TRX</span>
+                            </div>
+                            <div class="card bg-color--blue-opacity--15 border--none p-2 p-md-4 w-100">
+                                <span class="body-font font-w--600 mb-1">推荐收益</span>
+                                <span class="color--primary h4-font font-w--700"><span id="user_recommend_value"></span> TRX
+                                </span>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-row mb-2 reveal">
+                            <div class="card bg-color--blue-opacity--15 border--none p-2 p-md-4 mr-2 w-100">
+                                <span class="body-font font-w--600 mb-1">我的LIRA币</span>
+                                <span class="color--primary h4-font font-w--700"><span id="leela_handle"></span> LIRA
+                                </span>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                    <div class="col-12 col-lg-6 col-xl-5 mt-2 mt-lg-0">
+                        <div class="token-calculator bg-color--blue-opacity--10 rounded--05 p-2 p-md-4 reveal">
+                            <div class="mb-4">
+                                <h3 class="h4-font font-w--600 mb-1">立即购买 </h3>
+                                <span class="text-color--200 font-size--15">使用TRX立即购买,奖池大奖、分红奖励 收益来不停</span>
+                            </div>
+
+                            <div class="token-calculator-fields bg-color--blue-opacity--15 rounded--05 mt-3">
+
+                                <div class="input-field-row pb-0">
+                                    <input type="number" readonly="" value="loading" class="currency-input body-font font-w--600 btn_price" />
+                                    <span class="currency-name currency-name--target body-font font-w--600 text-uppercase">TRX</span>
+                                </div>
+                                <div class="input-field-row pb-0">
+                                    <!-- Button BG Primary -->
+                                    <a href="#" class="btn btn-bg--primary btn-size--md mr-1 buy_now"><span
+                                            class="btn__text">立即获取大奖</span></a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--关于我们-->
+        <section class="space about about--v1 section--darkblue bg-gradient--darkblue--2" id="about">
+            <div class="container">
+                <div class="row align-items-center">
+
+                    <div class="col-12 col-lg-12 remove-space--bottom">
+                        <div class="mb-5 mb-lg-12 text-center text-lg-left reveal">
+                            <h2 class="h3-font font-w--600 mb-2">规则</h2>
+                            <!-- <p class="font-size--20">第一位参与者100个TRX，初始70位参与者递增1%，70位后递增减半，递增人数加倍，再140位递增再次减半，以此类推。</p>-->
+                        </div>
+
+                        <div class="d-md-flex mb-4 mb-lg-5  mb-lg-12 text-center text-md-left reveal">
+                            <span class="mb-3 mb-lg-0 mr-md-5"> <img src="img/icon-background.png" alt="icon" /> </span>
+                            <div>
+                                <h3 class="h5-font font-w--600 text-color--200 mb-1">游戏规则</h3>
+                                <p class="text-color--500 text-color--200" style="color: #fff; font-weight: bolder;">
+                                    购买游戏即可获得收益资格,并重置游戏倒计时,后面用户购买即可按已购份额享受分红收益,并有资格进行推广,推广用户购买最高可获得推荐用户购买额10%的推荐奖励,如倒计时结束最后购买用户将独获奖池大奖。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="d-md-flex mb-4 mb-lg-5  mb-lg-12 text-center text-md-left reveal">
+                            <span class="mb-3 mb-lg-0 mr-md-5"> <img src="img/icon-mission.png" alt="icon" /> </span>
+                            <div>
+                                <h3 class="h5-font font-w--600 text-color--200 mb-1">递增示例</h3>
+                                <p class="text-color--500 text-color--200 text-left" style="color: #fff; font-weight: bolder;">70名参与者每次递增1% 参与金额100~200个TRX，总量金池约 10067
+                                </p><br/>
+                                <p class="text-color--500 text-color--200 text-left" style="color: #fff; font-weight: bolder;">140名参与者每次递增0.5% 参与金额200~400个TRX，总量金池约 50613
+                                </p><br/>
+                                <p class="text-color--500 ext-color--200 text-left" style="color: #fff; font-weight: bolder;">280名参与者每次递增0.25% 参与金额400~800个TRX，总量金池约 213505
+                                </p><br/>
+                                <p class="text-color--500 text-color--200 text-left" style="color: #fff; font-weight: bolder;">560名参与者每次递增0.125% 参与金额800~1600个TRX，总量金池约 869551 </p>
+                                <br/>
+                                <p class="text-color--500 text-color--200 text-left" style="color: #fff; font-weight: bolder;">1120名参与者每次递增0.0625% 参与金额1600~3200个TRX，总量金池约 351万 </p>
+                                <br/>
+                                <p class="text-color--500 text-color--200 text-left" style="color: #fff; font-weight: bolder;">2240名参与者每次递增0.03125% 参与金额3200~6400个TRX，总量金池约 1414万 </p>
+                                <br/>
+                                <p class="text-color--500 text-color--200 text-left" style="color: #fff; font-weight: bolder;">4480名参与者每次递增0.015625% 参与金额6400~12800个TRX，总量金池约 5700万 </p>
+                                <br/>
+                                <p class="text-color--500 text-color--200 text-left" style="color: #fff; font-weight: bolder;">8960名参与者每次递增0.007810% 参与金额12800~25600个TRX，总量金池约 2亿3千万 </p>
+                                <br/>
+                                <p class="text-color--500 text-color--200 text-left" style="color: #fff; font-weight: bolder;">无限递增..... </p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--分配-->
+        <section class="space token-saleinfo token-saleinfo--v1 section--darkblue bg-gradient--darkblue--2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-sm-10 col-md-8 mx-auto">
+                        <div class="text-center mb-5 mb-lg-7 reveal">
+                            <h2 class="h3-font font-w--600 mb-2">奖池分配</h2>
+                            <p class="h6-font text-color--200">规则:每次认购金额递增1%。认购金额分配: 30%进入大奖池,45%给之前购买的玩家分红,10%给推荐人,10%平台收取,在好友邀请下购买可获得5%的返利。每次有人接龙认购,倒计时重新开始,倒计时完成后最后购买者独得奖池!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- <div class="col-12 col-lg-8 pr-lg-6 mb-4 mb-lg-0">
+                        <div class="token-saleinfo-dist d-md-flex align-items-md-center reveal">
+                            <div id="pie-chart--v1" class="pie-chart--flat position-relative mx-auto mr-md-3 mb-3 mb-md-0">
+                                <div class="text-center d-flex flex-column pos-abs-center">
+                                    <span class="text-color--200 font-size--14 font-w--600 mb-1">每次购买分配比例</span>
+                                
+                    <span class="text-color--200 font-w--600">TRX</span>
+                </div>
+            </div>
+            <div class="content dist-content">
+                <h3 class="h4-font font-w--600 mb-3">分配详细</h3>
+                <ul class="content-list list-unstyled remove-space--bottom">
+                    <li class="font-w--500 d-flex align-items-center justify-content-between mb-1">
+                        <div class="d-flex align-items-center">
+                            <span class="oval--md mr-1 jsElement" data-bg-color="#3260ED"></span>
+                            <span class="content-list__name text-color--200">奖池比例</span>
+                        </div> <span class="content-list__value text-color--200">30%</span>
+                    </li>
+                    <li class="font-w--500 d-flex align-items-center justify-content-between mb-1">
+                        <div class="d-flex align-items-center">
+                            <span class="oval--md mr-1 jsElement" data-bg-color="#8CA8FF"></span>
+                            <span class="content-list__name text-color--200">分红比例</span>
+                        </div> <span class="content-list__value text-color--200">45%</span>
+                    </li>
+                    <li class="font-w--500 d-flex align-items-center justify-content-between mb-1">
+                        <div class="d-flex align-items-center">
+                            <span class="oval--md mr-1 jsElement" data-bg-color="#B6BD00"></span>
+                            <span class="content-list__name text-color--200">定期回购LIRA</span>
+                        </div> <span class="content-list__value text-color--200">10%</span>
+                    </li>
+                    <li class="font-w--500 d-flex align-items-center justify-content-between mb-1">
+                        <div class="d-flex align-items-center">
+                            <span class="oval--md mr-1 jsElement" data-bg-color="#D65800"></span>
+                            <span class="content-list__name text-color--200">推荐奖励</span>
+                        </div> <span class="content-list__value text-color--200">6%</span>
+                    </li>
+                    <li class="font-w--500 d-flex align-items-center justify-content-between mb-1">
+                        <div class="d-flex align-items-center">
+                            <span class="oval--md mr-1 jsElement" data-bg-color="#FFB755"></span>
+                            <span class="content-list__name text-color--200">直接返还到会员账号（通过推荐链接参与，直接返还）</span>
+                        </div> <span class="content-list__value text-color--200">5%</span>
+                    </li>
+                </ul>
+
+
+            </div>
+            </div>
+            </div>-->
+                    <div class="col-12 col-lg-4 ml-auto">
+                        <div class="content allocation-content reveal">
+                            <h3 class="h4-font font-w--600 mb-3">游戏分成占比 </h3>
+                            <div class="allocation-bar-wrapper bar-chart--v1 position-relative d-flex mb-3">
+                                <div class="bar-portion jsElement" data-bg-color="#8ca8ff" data-progress-horizon="30">
+                                    <span data-tooltip="">奖池比例 30%</span>
+                                </div>
+                                <div class="bar-portion jsElement" data-bg-color="#3260ed" data-progress-horizon="45">
+                                    <span data-tooltip="">分红比例 45%</span>
+                                </div>
+                                <div class="bar-portion jsElement" data-bg-color="#b6bd00" data-progress-horizon="10">
+                                    <span data-tooltip="">游戏手续 10%</span>
+                                </div>
+                                <div class="bar-portion jsElement" data-bg-color="#d65800" data-progress-horizon="10">
+                                    <span data-tooltip="">推荐奖励 10%</span>
+                                </div>
+                                <div class="bar-portion jsElement" data-bg-color="#ffb755" data-progress-horizon="5">
+                                    <span data-tooltip="">直接返还到会员账号（通过推荐链接参与，直接返还） 5%</span>
+                                </div>
+                            </div>
+                            <ul class="content-list list-unstyled remove-space--bottom">
+                                <li class="font-w--500 d-flex align-items-center justify-content-between mb-1">
+                                    <div class="d-flex align-items-center">
+                                        <span class="content-list__name text-color--200">奖池比例</span>
+                                    </div> <span class="content-list__value text-color--200">30%</span>
+                                </li>
+                                <li class="font-w--500 d-flex align-items-center justify-content-between mb-1">
+                                    <div class="d-flex align-items-center">
+                                        <span class="content-list__name text-color--200">分红比例</span>
+                                    </div> <span class="content-list__value text-color--200">45%</span>
+                                </li>
+                                <li class="font-w--500 d-flex align-items-center justify-content-between mb-1">
+                                    <div class="d-flex align-items-center">
+                                        <span class="content-list__name text-color--200">定期回购LIRA</span>
+                                    </div> <span class="content-list__value text-color--200">10%</span>
+                                </li>
+                                <li class="font-w--500 d-flex align-items-center justify-content-between mb-1">
+                                    <div class="d-flex align-items-center">
+                                        <span class="content-list__name text-color--200">推荐奖励</span>
+                                    </div> <span class="content-list__value text-color--200">10%</span>
+                                </li>
+                                <li class="font-w--500 d-flex align-items-center justify-content-between mb-1">
+                                    <div class="d-flex align-items-center">
+                                        <span class="content-list__name text-color--200">直接返还到会员账号（通过推荐链接参与，直接返还）</span>
+                                    </div> <span class="content-list__value text-color--200">5%</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <footer class="footer section--darkblue bg-gradient--darkblue--6">
+            <div class="space--top pb-6 pb-lg-10 border--bottom">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-9 col-lg-5 pr-lg-7 mb-4 mb-lg-0">
+                            <span class="mb-2"> <img src="img/brand-logo-white.png" alt="brand-logo" /> </span>
+                            <p>基于区块链可持续性收益的投资产品</p>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2 mb-1 mb-lg-0">
+                            <h3 class="font-size--20 text-color--300 mb-2 font-w--700">快捷连接</h3>
+                            <ul class="list-unstyled">
+                                <li><a href="#about" class="text-color--200 body-font">规则</a></li>
+                                <li><a href="#token-sale-details" class="text-color--200 body-font">LIRA币</a></li>
+
+                            </ul>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="py-3">
+                <div class="container">
+                    <div class="row">
+                        <div class="col text-center">
+
+                            <p class="text-color--500 font-size--14">&copy; 2021 <a href="#" class="text-color--500">LIRA</a>. All Rights Reserved.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <script src="https://unpkg.com/web3@latest/dist/web3.min.js"></script>
+    <script src="js/math.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="js/plugins.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/jquery.query.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/clipboard.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+
+</html>
