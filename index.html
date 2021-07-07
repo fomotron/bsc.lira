@@ -122,7 +122,7 @@
                             <h2 class="hero__title h2-font mb-2 jiangchi">奖池金额:<span>loading</span></h2>
                             <h2 class="hero__title h2-font mb-2 dangqianjiagge">当前价格:<span>loading</span></h2>
 
-                            <div class="button-group">
+                            <!-- <div class="button-group">
                                 <a href="javascript:void(0);" class="tab_item btn btn-bg--darkblue btn-bg--cta--2"><span class="btn__text">单独购买</span></a>
                                 <a href="javascript:void(0);" class="tab_item btn btn-bg--darkblue"><span class="btn__text">批量购买</span></a>
                             </div>
@@ -132,7 +132,7 @@
                                     <p>一次购买一票,最多可获取总投入额300%的回报,可复投,回报率累加</p>
                                     <p class="h4-font mb-1">价格:<span class="info_price">loading</span>&nbsp;BNB</p>
                                 </div>
-                                <!-- end of title -->
+                         
                                 <div class="col-12 col-md-10 col-lg-8 mx-md-auto">
                                     <div class="button-group d-flex flex-row flex-sm-row align-items-center d-sm-inline-block">
                                         <a href="javascript:void(0)" class="btn buy_now btn-bg--primary rounded--full btn-hover--3d btn-hover--splash">
@@ -140,13 +140,15 @@
                                         <a href="javascript:void(0)" target="_blank" class="btn view_contract btn-bg--darkblue rounded--full btn-hover--3d btn-hover--splash btn-size--sm">
                                             <span class="btn__text">查看合约</span> </a>
                                     </div>
-                                    <!-- end of from -->
+                                 
                                 </div>
-                            </div>
-                            <div class="bg-color--primary rounded--10 form--v8 bg-white py-6 py-lg-8 box-shadow--5 text-center  tab_content" style="display:none;">
+                            </div> -->
+                            <div class="bg-color--primary rounded--10 form--v8 bg-white py-6 py-lg-8 box-shadow--5 text-center  tab_content">
                                 <div class="mb-5 px-3">
                                     <h2 class="h3-font mb-1">批量购买</h2>
                                     <p>一次性可购买多票,最多可获取总投入额300%的回报,可复投,回报率累加</p>
+                                    <a href="javascript:void(0)" target="_blank" class="btn view_contract btn-bg--darkblue rounded--full btn-hover--3d btn-hover--splash btn-size--sm">
+                                        <span class="btn__text">查看合约</span> </a>
                                     <p class="h4-font mb-1">价格:<span class="info_price_bulk">loading</span>&nbsp;BNB</p>
                                 </div>
                                 <!-- end of title -->
@@ -160,9 +162,14 @@
 
                                     </form>
                                     <div class="button-group">
-                                        <a href="javascript:void(0)" class="btn btn-bg--cta--4 btn-size--sm mr-1 opearte_buy_count"><span class="btn__text">5</span></a>
-                                        <a href="javascript:void(0)" class="btn btn-bg--cta--4 btn-size--sm mr-1 opearte_buy_count"><span class="btn__text">10</span></a>
-                                        <a href="javascript:void(0)" class="btn btn-bg--cta--4 btn-size--sm mr-1 opearte_buy_count"><span class="btn__text">20</span></a>
+                                        <a href="javascript:void(0)" class="btn btn-bg--cta--4 btn-size--sm mr-1 btn-hover--splash opearte_buy_count"><span class="btn__text">5</span></a>
+                                        <a href="javascript:void(0)" class="btn btn-bg--cta--4 btn-size--sm mr-1 btn-hover--splash opearte_buy_count"><span class="btn__text">10</span></a>
+                                        <a href="javascript:void(0)" class="btn btn-bg--cta--4 btn-size--sm mr-1 btn-hover--splash opearte_buy_count"><span class="btn__text">20</span></a>
+                                    </div>
+                                    <div class="button-group">
+                                        <a href="javascript:void(0)" class="btn btn-bg--cta--4 btn-size--sm mr-1 btn-hover--splash opearte_buy_count"><span class="btn__text">50</span></a>
+                                        <a href="javascript:void(0)" class="btn btn-bg--cta--4 btn-size--sm mr-1 btn-hover--splash opearte_buy_count"><span class="btn__text">100</span></a>
+                                        <a href="javascript:void(0)" class="btn btn-bg--cta--4 btn-size--sm mr-1 btn-hover--splash opearte_buy_count"><span class="btn__text">200</span></a>
                                     </div>
                                     <!-- end of from -->
                                 </div>
@@ -484,7 +491,7 @@
 
 
         $(".opearte_buy_count").click(function() {
-            var buy_count = $(this).find("span.btn__text").text();
+            var buy_count = $.trim($(this).find("span.btn__text").text());
             $("#txt_buy_count").val(buy_count);
 
             if (isNaN(buy_count)) {
@@ -498,7 +505,7 @@
             }
         })
         $("#txt_buy_count").change(function() {
-            var buy_count = parseInt($("#txt_buy_count").val())
+            var buy_count = parseInt($.trim($("#txt_buy_count").val()))
             if (isNaN(buy_count)) {
                 $("#txt_buy_count").val("1");
                 buy_count = 1;
