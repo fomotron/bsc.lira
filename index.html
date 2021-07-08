@@ -3,7 +3,8 @@
 
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport">
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>里拉斜塔 | LIRA</title>
     <link rel="icon" type="image/png" sizes="32x32" href="favicon.png" />
@@ -55,8 +56,13 @@
                     <button class="navbar-toggler d-lg-none" type="button" data-toggle="navbarToggler" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
                     <nav>
                         <ul class="navbar-nav" id="navbar-nav">
+
+                            <li class="nav-item"> <a class="nav-link" href="#roadmap">项目介绍</a> </li>
+                            <li class="nav-item"> <a class="nav-link" href="#my_report">LIRA币</a> </li>
                             <li class="nav-item"> <a class="nav-link" href="#about">规则</a> </li>
-                            <li class="nav-item"> <a class="nav-link" href="#token-sale-details">LIRA币</a> </li>
+                            <li class="nav-item"> <a class="nav-link" href="#faq">常见问题</a> </li>
+
+
                         </ul>
                     </nav>
                 </div>
@@ -96,20 +102,18 @@
                     <div class="col-12 col-md-10 col-lg-8 col-xl-7 mx-auto mx-lg-0 mb-3 mt-4 mt-lg-0 text-center text-lg-left z-index2">
                         <div class="hero-content">
                             <h1 class="hero__title font-w--600 mb-2 mb-lg-3">里拉斜塔 </h1>
-                            <h5 class="hero__title font-w--300 mb-2 mb-lg-3" id="base_header_lian">依托于<a href="https://tron.network/" class="lianname" target="_blank">Tron(波场)</a>
+                            <p>里拉斜塔是一个有意思的物理模型，理论上可以无限叠加</p>
+                            <h5 class="hero__title font-w--300 mb-2 mb-lg-3" id="base_header_lian">部署在<a href="https://tron.network/" class="lianname" target="_blank">币安智能链（BSC）</a>上，使用币安币（BNB）参与，代码开源，智能合约自动执行，无人工干预
 
                             </h5>
                             <a href="javascript:void(0)" target="_blank" class="btn view_contract btn-bg--darkblue rounded--full btn-hover--3d btn-hover--splash btn-size--sm">
                                 <span class="btn__text">查看合约</span> </a>
                             <p class="hero__description text-color--200 font-size--20 opacity--80 mb-3 mb-lg-5 mb-md-6 text-left" style="color: #fff;">
 
-                                <p class="text-left font-size--22" style="color: #ffff00;font-weight: bolder;">手机请使用以太坊钱包DAPP浏览器 </p>
-                                <p class="text-left font-size--22" style="color: #ffff00;font-weight: bolder;">电脑请安装浏览器钱包插件</p>
-                                <!-- <p class="text-left font-size--18" style="color: #ffff00;font-weight: bolder;">支持钱包:<a style="color: #fff;font-weight: bolder;text-decoration: underline;" href="https://www.tronlink.org/" target="_blank">波宝钱包</a>
-                                    <a style="color: #fff;font-weight: bolder;text-decoration: underline;" href="https://mathwallet.org/zh-cn/" target="_blank">麦子钱包</a>
-                                    <a style="color: #fff;font-weight: bolder;text-decoration: underline;" href="https://www.tokenpocket.pro/" target="_blank">TokenPocket</a>
-                                </p> -->
-
+                                <p class="text-left font-size--22" style="color: #ffff00;font-weight: bolder;">
+                                    手机请使用以太坊钱包DAPP浏览器 </p>
+                                <p class="text-left font-size--22" style="color: #ffff00;font-weight: bolder;">电脑请安装浏览器钱包插件
+                                </p>
 
                                 <p class="text-left" style="color:#fff">1、合约部署到公链，人人可查看源码，人人可参与，免注册，无服务器，无操盘手，无后台 </p>
                                 <p class="text-left" style="color:#fff">2、30%大奖奖池给最后一位参与者 </p>
@@ -118,12 +122,12 @@
                                 <p class="text-left" style="color:#fff">5、可以复投 </p>
                                 <p class="text-left" style="color:#fff">6、每次有新的参与者，开奖倒计时重置24小时 </p>
                                 <p class="text-left" style="color:#fff">7、倒计时完成立即发放大奖到获奖者钱包，合约自动执行 </p>
-                                <p class="text-left" style="color:#fff">8、参与者立刻空投100万里拉币LIRA </p><br/>
+                                <p class="text-left" style="color:#fff">8、参与者立刻空投100万里拉币LIRA </p><br />
                                 <span style="color: #da5d5d;font-weight: bolder;" class="font-size--22">官方群Telegram:
-                                <a href="https://t.me/MoreMoneyGame" target="_blank" 
-                                    style="color: #da5d5d;font-weight: bolder; text-decoration: underline;">https://t.me/MoreMoneyGame</a></span><br/>
+                                <a href="https://t.me/MoreMoneyGame" target="_blank"
+                                    style="color: #da5d5d;font-weight: bolder; text-decoration: underline;">https://t.me/MoreMoneyGame</a></span><br />
                             </p>
-                            <br/>
+                            <br />
                             <h2 class="hero__title h2-font mb-2 jiangchi">奖池金额:<span>loading</span></h2>
                             <h2 class="hero__title h2-font mb-2 dangqianjiagge">当前价格:<span>loading</span></h2>
 
@@ -161,19 +165,26 @@
                                         <div class="input-group d-flex">
                                             <input type="number" class="form-control" id="txt_buy_count" value="1" onkeyup="if(this.value.length==1){this.value=this.value.replace(/[^1-9]/g,'')}else{this.value=this.value.replace(/\D/g,'')}" onafterpaste="if(this.value.length==1){this.value=this.value.replace(/[^1-9]/g,'0')}else{this.value=this.value.replace(/\D/g,'')}"
                                                 placeholder="购买票数" required>
-                                            <a href="javascript:void(0)" class="btn buy_now_bulk btn-bg--primary rounded--full"><span class="btn__text"><i class="icon icon-arrow-right"></i></span></a>
+                                            <a href="javascript:void(0)" class="btn buy_now_bulk btn-bg--primary rounded--full"><span
+                                                    class="btn__text"><i class="icon icon-arrow-right"></i></span></a>
                                         </div>
 
                                     </form>
                                     <div class="button-group">
-                                        <a href="javascript:void(0)" class="btn btn-bg--cta--4 btn-size--sm mr-1 btn-hover--splash opearte_buy_count"><span class="btn__text">5</span></a>
-                                        <a href="javascript:void(0)" class="btn btn-bg--cta--4 btn-size--sm mr-1 btn-hover--splash opearte_buy_count"><span class="btn__text">10</span></a>
-                                        <a href="javascript:void(0)" class="btn btn-bg--cta--4 btn-size--sm mr-1 btn-hover--splash opearte_buy_count"><span class="btn__text">20</span></a>
+                                        <a href="javascript:void(0)" class="btn btn-bg--cta--4 btn-size--sm mr-1 btn-hover--splash opearte_buy_count"><span
+                                                class="btn__text">5</span></a>
+                                        <a href="javascript:void(0)" class="btn btn-bg--cta--4 btn-size--sm mr-1 btn-hover--splash opearte_buy_count"><span
+                                                class="btn__text">10</span></a>
+                                        <a href="javascript:void(0)" class="btn btn-bg--cta--4 btn-size--sm mr-1 btn-hover--splash opearte_buy_count"><span
+                                                class="btn__text">20</span></a>
                                     </div>
                                     <div class="button-group">
-                                        <a href="javascript:void(0)" class="btn btn-bg--cta--4 btn-size--sm mr-1 btn-hover--splash opearte_buy_count"><span class="btn__text">50</span></a>
-                                        <a href="javascript:void(0)" class="btn btn-bg--cta--4 btn-size--sm mr-1 btn-hover--splash opearte_buy_count"><span class="btn__text">100</span></a>
-                                        <a href="javascript:void(0)" class="btn btn-bg--cta--4 btn-size--sm mr-1 btn-hover--splash opearte_buy_count"><span class="btn__text">200</span></a>
+                                        <a href="javascript:void(0)" class="btn btn-bg--cta--4 btn-size--sm mr-1 btn-hover--splash opearte_buy_count"><span
+                                                class="btn__text">50</span></a>
+                                        <a href="javascript:void(0)" class="btn btn-bg--cta--4 btn-size--sm mr-1 btn-hover--splash opearte_buy_count"><span
+                                                class="btn__text">100</span></a>
+                                        <a href="javascript:void(0)" class="btn btn-bg--cta--4 btn-size--sm mr-1 btn-hover--splash opearte_buy_count"><span
+                                                class="btn__text">200</span></a>
                                     </div>
                                     <!-- end of from -->
                                 </div>
@@ -245,8 +256,79 @@
                 </div>
             </div>
         </section>
-        <!--我的信息-->
 
+
+        <section class="space--top--2 hidden roadmap roadmap--v1 section--darkblue bg-gradient--darkblue--5" id="roadmap">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-sm-10 col-md-8 mx-auto reveal">
+                        <div class="text-center mb-sm-5 mb-lg-7">
+                            <h2 class="h3-font font-w--600 mb-2">项目介绍</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row align-items-center pb-2 pb-md-0 reveal">
+
+                    <div class="col-12 col-xl-9">
+                        <div class="carosuel-slider--v6 slick-initialized slick-slider slick-vertical">
+
+                            <div class="slick-list draggable">
+                                <div class="slick-track" style="opacity: 1;  transform: translate3d(0px, 0px, 0px);">
+                                    <div class="slide mb-1 slick-slide slick-current slick-active" data-year="2017" data-slick-index="0">
+                                        <div class="d-md-flex align-items-md-center">
+                                            <div class="mr-5 pr-5 mr-xl-7 pr-xl-7 mb-3 mb-md-0 position-relative">
+                                                <span class="text-color--500 font-w--600 mb-1 opacity--60">投资将获得4个收益</span>
+                                                <h3 class="slide__title font-w--600 font-size--26 text-color--200">第一部分
+                                                </h3>
+                                                <span class="d-none d-md-inline-block decor decor--square"></span>
+                                            </div>
+                                            <ul class="pl-2 pl-md-0">
+                                                <li class="text-color--400">
+                                                    <p class="h6-font">无限的推荐收益</p>
+                                                </li>
+                                                <li class="text-color--400">
+                                                    <p class="h6-font">三倍总投入额的静态收益立即分发（后续重复参与购买累加）</p>
+                                                </li>
+                                                <li class="text-color--400">
+                                                    <p class="h6-font">诱人的30%总奖池</p>
+                                                </li>
+                                                <li class="text-color--400">
+                                                    <p class="h6-font">空投的100万LIRA代币</p>
+                                                </li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="slide mb-1 slick-slide slick-active">
+                                        <div class="d-md-flex align-items-md-center">
+                                            <div class="mr-5 pr-5 mr-xl-7 pr-xl-7 mb-3 mb-md-0 position-relative">
+                                                <span class="text-color--500 font-w--600 mb-1 opacity--60">LIRA拉斜塔通证代币</span>
+                                                <h3 class="slide__title font-size--26 font-w--600 text-color--200">第二部分
+                                                </h3>
+                                                <span class="d-none d-md-inline-block decor decor--square"></span>
+                                            </div>
+                                            <ul class="pl-2 pl-md-0">
+                                                <li class="text-color--400">
+                                                    <p class="h6-font">项目代币,投资即空投</p>
+                                                </li>
+                                                <li class="text-color--400">
+                                                    <p class="h6-font">定期回购,无限想象空间</p>
+                                                </li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <!--我的信息-->
         <section class="space token-sale-details token-sale-details--v1 section--darkblue bg-gradient--darkblue--3" id="my_report">
             <div class="container">
                 <div class="row">
@@ -334,7 +416,7 @@
                         </div>
 
                         <div class="d-md-flex mb-4 mb-lg-5 mb-lg-12 text-center text-md-left reveal">
-                            <span class="mb-3 mb-lg-0 mr-md-5"> <img src="img/icon-background.png"alt="icon"/> </span>
+                            <span class="mb-3 mb-lg-0 mr-md-5"> <img src="img/icon-background.png" alt="icon" /> </span>
                             <div>
                                 <h3 class="h5-font font-w--600 text-color--200 mb-1">游戏规则</h3>
                                 <p class="text-color--500 text-color--200" style="color: #fff; font-weight: bolder;">
@@ -343,25 +425,28 @@
                             </div>
                         </div>
                         <div class="d-md-flex mb-4 mb-lg-5 mb-lg-12 text-center text-md-left reveal">
-                            <span class="mb-3 mb-lg-0 mr-md-5"> <img src="img/icon-mission.png"alt="icon"/> </span>
+                            <span class="mb-3 mb-lg-0 mr-md-5"> <img src="img/icon-mission.png" alt="icon" /> </span>
                             <div>
                                 <h3 class="h5-font font-w--600 text-color--200 mb-1">递增示例</h3>
-                                <p class="text-color--500 text-color--200 text-left" style="color: #fff; font-weight: bolder;">70名参与者每次递增1% 参与金额100~200个TRX，总量金池约 10067
-                                </p><br/>
-                                <p class="text-color--500 text-color--200 text-left" style="color: #fff; font-weight: bolder;">140名参与者每次递增0.5% 参与金额200~400个TRX，总量金池约 50613
-                                </p><br/>
-                                <p class="text-color--500 ext-color--200 text-left" style="color: #fff; font-weight: bolder;">280名参与者每次递增0.25% 参与金额400~800个TRX，总量金池约 213505
-                                </p><br/>
-                                <p class="text-color--500 text-color--200 text-left" style="color: #fff; font-weight: bolder;">560名参与者每次递增0.125% 参与金额800~1600个TRX，总量金池约 869551 </p>
-                                <br/>
-                                <p class="text-color--500 text-color--200 text-left" style="color: #fff; font-weight: bolder;">1120名参与者每次递增0.0625% 参与金额1600~3200个TRX，总量金池约 351万 </p>
-                                <br/>
-                                <p class="text-color--500 text-color--200 text-left" style="color: #fff; font-weight: bolder;">2240名参与者每次递增0.03125% 参与金额3200~6400个TRX，总量金池约 1414万 </p>
-                                <br/>
-                                <p class="text-color--500 text-color--200 text-left" style="color: #fff; font-weight: bolder;">4480名参与者每次递增0.015625% 参与金额6400~12800个TRX，总量金池约 5700万 </p>
-                                <br/>
-                                <p class="text-color--500 text-color--200 text-left" style="color: #fff; font-weight: bolder;">8960名参与者每次递增0.007810% 参与金额12800~25600个TRX，总量金池约 2亿3千万 </p>
-                                <br/>
+                                <p class="text-color--500 text-color--200" style="color: #fff; font-weight: bolder;">
+                                    玩法递增规则：第一位参与者0.1个BNB，初始70位参与者递增1%，70位后递增减半，递增人数加倍，再140位递增再次减半，以此类推
+                                </p>
+                                <p class="text-color--500 text-color--200 text-left" style="color: #fff; font-weight: bolder;">70名参与者每次递增1% 参与金额0.1~0.2个BNB，总量金池约 10.067 BNB
+                                </p><br />
+                                <p class="text-color--500 text-color--200 text-left" style="color: #fff; font-weight: bolder;">140名参与者每次递增0.5% 参与金额0.2~0.4个BNB，总量金池约 50.613 BNB
+                                </p><br />
+                                <p class="text-color--500 ext-color--200 text-left" style="color: #fff; font-weight: bolder;">280名参与者每次递增0.25% 参与金额0.4~0.8个BNB，总量金池约 213.505 BNB
+                                </p><br />
+                                <p class="text-color--500 text-color--200 text-left" style="color: #fff; font-weight: bolder;">560名参与者每次递增0.125% 参与金额0.8~1.6个BNB，总量金池约 869.551 BNB </p>
+                                <br />
+                                <p class="text-color--500 text-color--200 text-left" style="color: #fff; font-weight: bolder;">1120名参与者每次递增0.0625% 参与金额1.6~3.2个BNB，总量金池约 3510 BNB</p>
+                                <br />
+                                <p class="text-color--500 text-color--200 text-left" style="color: #fff; font-weight: bolder;">2240名参与者每次递增0.03125% 参与金额3.2~6.4个BNB，总量金池约 14140 BNB </p>
+                                <br />
+                                <p class="text-color--500 text-color--200 text-left" style="color: #fff; font-weight: bolder;">4480名参与者每次递增0.015625% 参与金额6.4~12.8个BNB，总量金池约 57000 BNB </p>
+                                <br />
+                                <p class="text-color--500 text-color--200 text-left" style="color: #fff; font-weight: bolder;">8960名参与者每次递增0.007810% 参与金额12.8~25.6个BNB，总量金池约 230000 BNB </p>
+                                <br />
                                 <p class="text-color--500 text-color--200 text-left" style="color: #fff; font-weight: bolder;">无限递增..... </p>
                             </div>
                         </div>
@@ -387,6 +472,7 @@
                 <div class="row">
 
                     <div class="col-12 col-lg-4 ml-auto">
+
                         <div class="content allocation-content reveal">
                             <h3 class="h4-font font-w--600 mb-3">游戏分成占比 </h3>
                             <div class="allocation-bar-wrapper bar-chart--v1 position-relative d-flex mb-3">
@@ -440,7 +526,368 @@
         </section>
 
 
+        <section class="section--darkblue bg-gradient--darkblue--5">
 
+
+            <div class="space faq faq--v1" id="faq">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-lg-4">
+                            <div class="text-center text-sm-left mb-5 mb-lg-7 reveal">
+                                <h2 class="h3-font font-w--600 mb-2">常见问题</h2>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-lg-8">
+                            <div class="accordion accordion--v1 reveal remove-space--bottom" id="accordion1">
+                                <div class="card mb-1">
+                                    <button class="btn btn-header btn-link" type="button" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                                        <span class="h6-font text-color--200 text-left font-w--600">玩过数字货币的投资者</span>
+                                        <i class="icon icon-up-arrow"></i>
+                                    </button>
+                                    <div id="collapse1" class="collapse show" data-parent="#accordion1">
+                                        <div class="card-body pl-3">
+                                            <p class="text-color--500">
+                                                1、任意一个支持币安智能链BSC的以太钱包（TP，IM，麦子，比特派，等等）<br /> 2、选择币安智能链，打开钱包DAPP浏览器，使用币安币BNB就可以立即一键参与
+                                                <br />
+
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card mb-1">
+                                    <button class="btn btn-header btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                                        <span class="h6-font text-color--200 text-left font-w--600">网站无法访问</span>
+                                        <i class="icon icon-up-arrow"></i>
+                                    </button>
+                                    <div id="collapse2" class="collapse" data-parent="#accordion1">
+                                        <div class="card-body pl-3">
+                                            <p class="text-color--500">
+                                                1、部分地区可能需要翻墙才能下载<br /> 安卓和电脑：
+                                                <a href="http://fotiaoqiang.io/" target="_blank">http://fotiaoqiang.io/</a><br /> 苹果手机： 1: 到淘宝买一个香港的Apple ID，这个必须的，才能下载翻墙软件和币安交易所<br /> 2：在Apple store搜索下载sakuraVpn 可以免费使用
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card mb-1">
+                                    <button class="btn btn-header btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                                        <span class="h6-font text-color--200 text-left font-w--600">手机钱包</span>
+                                        <i class="icon icon-up-arrow"></i>
+                                    </button>
+                                    <div id="collapse3" class="collapse" data-parent="#accordion1">
+                                        <div class="card-body pl-3">
+                                            <p class="text-color--500">
+                                                1：币安交易所：<br /><a href="https://www.binance.com/zh-CN/download" target="_blank">https://www.binance.com/zh-CN/download</a><br /> 2：TP钱包：
+                                                <br /> <a href="https://www.tokenpocket.pro/" target="_blank">https://www.tokenpocket.pro/</a>
+                                                <br /><span class="text-color--200">所有支持BSC的钱包均能使用</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card mb-1">
+                                    <button class="btn btn-header btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                                        <span
+                                            class="h6-font text-color--200 text-left font-w--600">如何在BNB交易所购买BNB</span>
+                                        <i class="icon icon-up-arrow"></i>
+                                    </button>
+                                    <div id="collapse4" class="collapse" data-parent="#accordion1">
+
+                                        <div class="card-body pl-3">
+                                            <p class="text-color--500">
+                                                打开币安交易所，注册账号，实名认证，就可以买币注册流程和实名认证都是按提示来操作，币安是全球第一的交易所，放心注册，这里就不演示了
+                                            </p>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-12 col-lg-9 mx-auto">
+                                                <div class="customer-website z-index2" data-simplebar="init" data-simplebar-auto-hide="false">
+                                                    <div class="row">
+                                                        <div class="col-12 col-md-6 mb-3 px-1">
+                                                            <div class="customer-website-item position-relative text-center">
+
+                                                                <span>
+                                                                <img src="img/step/1.png"
+                                                                    alt="customer-website" class="img-fluid">
+                                                            </span>
+                                                            </div>
+
+                                                        </div>
+
+                                                        <div class="col-12 col-md-6 mb-3 px-1">
+                                                            <div class="customer-website-item position-relative text-center">
+
+                                                                <span>
+                                                                <img src="img/step/2.png"
+                                                                    alt="customer-website" class="img-fluid">
+                                                            </span>
+                                                            </div>
+
+                                                        </div>
+
+                                                        <div class="col-12 col-md-6 mb-3 px-1">
+                                                            <div class="customer-website-item position-relative text-center">
+
+                                                                <span>
+                                                                <img src="img/step/3.png"
+                                                                    alt="customer-website" class="img-fluid">
+                                                            </span>
+                                                            </div>
+
+                                                        </div>
+
+                                                        <div class="col-12 col-md-6 mb-3 px-1">
+                                                            <div class="customer-website-item position-relative text-center">
+
+                                                                <span>
+                                                                <img src="img/step/4.png"
+                                                                    alt="customer-website" class="img-fluid">
+                                                            </span>
+                                                            </div>
+
+                                                        </div>
+                                                        <div class="col-12 col-md-6 mb-3 px-1">
+                                                            <div class="customer-website-item position-relative text-center">
+
+                                                                <span>
+                                                                <img src="img/step/5.png"
+                                                                    alt="customer-website" class="img-fluid">
+                                                            </span>
+                                                            </div>
+
+                                                        </div>
+                                                        <div class="col-12 col-md-6 mb-3 px-1">
+                                                            <div class="customer-website-item position-relative text-center">
+
+                                                                <span>
+                                                                <img src="img/step/6.png"
+                                                                    alt="customer-website" class="img-fluid">
+                                                            </span>
+                                                            </div>
+
+                                                        </div>
+                                                        <div class="col-12 col-md-6 mb-3 px-1">
+                                                            <div class="customer-website-item position-relative text-center">
+
+                                                                <span>
+                                                                <img src="img/step/7.png"
+                                                                    alt="customer-website" class="img-fluid">
+                                                            </span>
+                                                            </div>
+
+                                                        </div>
+                                                        <div class="col-12 col-md-6 mb-3 px-1">
+                                                            <div class="customer-website-item position-relative text-center">
+
+                                                                <span>
+                                                                <img src="img/step/8.png"
+                                                                    alt="customer-website" class="img-fluid">
+                                                            </span>
+                                                            </div>
+
+                                                        </div>
+                                                        <div class="col-12 col-md-6 mb-3 px-1">
+                                                            <div class="customer-website-item position-relative text-center">
+
+                                                                <span>
+                                                                <img src="img/step/9.png"
+                                                                    alt="customer-website" class="img-fluid">
+                                                            </span>
+                                                            </div>
+
+                                                        </div>
+                                                        <div class="col-12 col-md-6 mb-3 px-1">
+                                                            <div class="customer-website-item position-relative text-center">
+
+                                                                <span>
+                                                                <img src="img/step/10.png"
+                                                                    alt="customer-website" class="img-fluid">
+                                                            </span>
+                                                            </div>
+
+                                                        </div>
+                                                        <div class="col-12 col-md-6 mb-3 px-1">
+                                                            <div class="customer-website-item position-relative text-center">
+
+                                                                <span>
+                                                                <img src="img/step/11.png"
+                                                                    alt="customer-website" class="img-fluid">
+                                                            </span>
+                                                            </div>
+
+                                                        </div>
+                                                        <div class="col-12 col-md-6 mb-3 px-1">
+                                                            <div class="customer-website-item position-relative text-center">
+
+                                                                <span>
+                                                                <img src="img/step/12.png"
+                                                                    alt="customer-website" class="img-fluid">
+                                                            </span>
+                                                            </div>
+
+                                                        </div>
+                                                        <div class="col-12 col-md-6 mb-3 px-1">
+                                                            <div class="customer-website-item position-relative text-center">
+
+                                                                <span>
+                                                                <img src="img/step/13.png"
+                                                                    alt="customer-website" class="img-fluid">
+                                                            </span>
+                                                            </div>
+
+                                                        </div>
+                                                        <div class="col-12 col-md-6 mb-3 px-1">
+                                                            <div class="customer-website-item position-relative text-center">
+
+                                                                <span>
+                                                                <img src="img/step/14.png"
+                                                                    alt="customer-website" class="img-fluid">
+                                                            </span>
+                                                            </div>
+
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="card mb-1">
+                                    <button class="btn btn-header btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                                        <span class="h6-font text-color--200 text-left font-w--600">钱包操作</span>
+                                        <i class="icon icon-up-arrow"></i>
+                                    </button>
+                                    <div id="collapse5" class="collapse" data-parent="#accordion1">
+                                        <div class="card-body pl-3">
+                                            <p class="text-color--500">
+                                                以TP钱包软件为例，其他钱包软件类似
+                                            </p>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-12 col-lg-9 mx-auto">
+                                                <div class="customer-website z-index2" data-simplebar="init" data-simplebar-auto-hide="false">
+                                                    <div class="row">
+                                                        <div class="col-12 col-md-6 mb-3 px-1">
+                                                            <div class="customer-website-item position-relative text-center">
+
+                                                                <span>
+                                                                <img src="img/step2/1.png"
+                                                                    alt="customer-website" class="img-fluid">
+                                                            </span>
+                                                            </div>
+
+                                                        </div>
+
+                                                        <div class="col-12 col-md-6 mb-3 px-1">
+                                                            <div class="customer-website-item position-relative text-center">
+
+                                                                <span>
+                                                                <img src="img/step2/2.png"
+                                                                    alt="customer-website" class="img-fluid">
+                                                            </span>
+                                                            </div>
+
+                                                        </div>
+
+                                                        <div class="col-12 col-md-6 mb-3 px-1">
+                                                            <div class="customer-website-item position-relative text-center">
+
+                                                                <span>
+                                                                <img src="img/step2/3.png"
+                                                                    alt="customer-website" class="img-fluid">
+                                                            </span>
+                                                            </div>
+
+                                                        </div>
+
+                                                        <div class="col-12 col-md-6 mb-3 px-1">
+                                                            <div class="customer-website-item position-relative text-center">
+
+                                                                <span>
+                                                                <img src="img/step2/4.png"
+                                                                    alt="customer-website" class="img-fluid">
+                                                            </span>
+                                                            </div>
+
+                                                        </div>
+                                                        <div class="col-12 col-md-6 mb-3 px-1">
+                                                            <div class="customer-website-item position-relative text-center">
+
+                                                                <span>
+                                                                <img src="img/step2/5.png"
+                                                                    alt="customer-website" class="img-fluid">
+                                                            </span>
+                                                            </div>
+
+                                                        </div>
+                                                        <div class="col-12 col-md-6 mb-3 px-1">
+                                                            <div class="customer-website-item position-relative text-center">
+
+                                                                <span>
+                                                                <img src="img/step2/6.png"
+                                                                    alt="customer-website" class="img-fluid">
+                                                            </span>
+                                                            </div>
+
+                                                        </div>
+                                                        <div class="col-12 col-md-6 mb-3 px-1">
+                                                            <div class="customer-website-item position-relative text-center">
+
+                                                                <span>
+                                                                <img src="img/step2/7.png"
+                                                                    alt="customer-website" class="img-fluid">
+                                                            </span>
+                                                            </div>
+
+                                                        </div>
+                                                        <div class="col-12 col-md-6 mb-3 px-1">
+                                                            <div class="customer-website-item position-relative text-center">
+
+                                                                <span>
+                                                                <img src="img/step2/8.png"
+                                                                    alt="customer-website" class="img-fluid">
+                                                            </span>
+                                                            </div>
+
+                                                        </div>
+                                                        <div class="col-12 col-md-6 mb-3 px-1">
+                                                            <div class="customer-website-item position-relative text-center">
+
+                                                                <span>
+                                                                <img src="img/step2/9.png"
+                                                                    alt="customer-website" class="img-fluid">
+                                                            </span>
+                                                            </div>
+
+                                                        </div>
+
+
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
 
 
         <footer class="footer section--darkblue bg-gradient--darkblue--6">
@@ -448,19 +895,37 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-12 col-md-9 col-lg-5 pr-lg-7 mb-4 mb-lg-0">
-                            <span class="mb-2"> <img src="img/brand-logo-white.png"alt="brand-logo"/> </span>
+                            <span class="mb-2"> <img src="img/brand-logo-white.png" alt="brand-logo" /> </span>
                             <p>基于区块链可持续性收益的投资产品</p>
                         </div>
-                        <div class="col-6 col-md-4 col-lg-2 mb-1 mb-lg-0">
+                        <div class="col-4 col-md-4 col-lg-4 mb-1 mb-lg-0">
                             <h3 class="font-size--20 text-color--300 mb-2 font-w--700">快捷连接</h3>
                             <ul class="list-unstyled">
+                                <li><a href="#about" class="text-color--200 body-font">项目简介</a></li>
+                                <li><a href="#my_report" class="text-color--200 body-font">LIRA币</a></li>
                                 <li><a href="#about" class="text-color--200 body-font">规则</a></li>
-                                <li><a href="#token-sale-details" class="text-color--200 body-font">LIRA币</a></li>
+                                <li><a href="#faq" class="text-color--200 body-font">常见问题</a></li>
 
                             </ul>
                         </div>
 
+                        <div class="col-4 col-md-4 col-lg-4 mb-1 mb-lg-0">
+                            <h3 class="font-size--20 text-color--300 mb-2 font-w--700">友情链接</h3>
+                            <ul class="list-unstyled">
+                                <li><a href="https://www.binance.com/zh-CN/download" target="_blank" class="text-color--200 body-font">安币交易所</a></li>
+                                <li><a href="https://www.binance.org/" target="_blank" class="text-color--200 body-font">币安币官网</a></li>
+                                <li><a href="https://bscscan.com/" target="_blank" class="text-color--200 body-font">币安币浏览器</a></li>
+                            </ul>
+                        </div>
 
+                        <div class="col-4 col-md-4 col-lg-4 mb-1 mb-lg-0">
+                            <h3 class="font-size--20 text-color--300 mb-2 font-w--700">钱包</h3>
+                            <ul class="list-unstyled">
+                                <li><a href="https://trustwallet.com/" target="_blank" class="text-color--200 body-font">TrustWallet</a></li>
+                                <li><a href="https://www.tokenpocket.pro/" target="_blank" class="text-color--200 body-font">TokenPocket(TP)</a></li>
+                                <li><a href="https://mathwallet.org/zh-cn/" target="_blank" class="text-color--200 body-font">麦子钱包(Math)</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
